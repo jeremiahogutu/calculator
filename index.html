@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div><h1 class="text-center">Simple Calculator</h1></div>
+    <div>
+    <form class="container text-center" name="calc">
+        <input id="display" type="text">
+        <div>
+            <input id="clearScreen" type="button" value="C" OnClick='clearVal("")'>
+            <input type="button" value="1" OnClick='displayVal("1")'>
+            <input type="button" value="2" OnClick='displayVal("2")'>
+            <input type="button" value="+" OnClick='displayVal("+")'>
+        </div>
+        <div>
+            <input type="button" value="3" OnClick='displayVal("3")'>
+            <input type="button" value="4" OnClick='displayVal("4")'>
+            <input type="button" value="5" OnClick='displayVal("5")'>
+            <input type="button" value="-" OnClick='displayVal("-")'>
+        </div>
+        <div>
+            <input type="button" value="6" OnClick='displayVal("6")'>
+            <input type="button" value="7" OnClick='displayVal("7")'>
+            <input type="button" value="8" OnClick='displayVal("8")'>
+            <input type="button" value="X" OnClick='displayVal("*")'>
+        </div>
+        <div>
+            <input type="button" value="9" OnClick='displayVal("9")'>
+            <input type="button" value="0" OnClick='displayVal("0")'>
+            <input type="button" value="." OnClick='displayVal(".")'>
+            <input type="button" value="&#247;" OnClick='displayVal("/")'>
+        </div>
+        <div>
+            <input type="button" value="(" OnClick='displayVal("(")'>
+            <input type="button" value=")" OnClick='displayVal(")")'>
+            <input type="button" value="&#9003;" OnClick="back()">
+            <input type="button" value="=" OnClick= 'calcVal()'>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
